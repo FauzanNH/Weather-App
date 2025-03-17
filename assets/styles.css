@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.search-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #2980b9;
+}
+
+.result-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Styling untuk card prakiraan cuaca */
+#forecast-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.forecast-title {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.forecast-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 130px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.forecast-card:hover {
+    transform: translateY(-5px);
+}
+
+.forecast-date {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 13px;
+    letter-spacing: -0.3px;
+}
+
+.forecast-icon {
+    margin: 10px 0;
+}
+
+.forecast-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.forecast-temp {
+    margin: 10px 0;
+}
+
+.forecast-temp .max {
+    font-weight: bold;
+    color: #e74c3c;
+    margin-right: 8px;
+}
+
+.forecast-temp .min {
+    color: #3498db;
+}
+
+.forecast-desc {
+    font-size: 14px;
+    color: #555;
+    text-transform: capitalize;
+}
+
+/* Styling untuk card cuaca saat ini dengan font minimalis modern */
+.weather-card.current {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 350px;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+}
+
+.weather-card.current h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    letter-spacing: -0.5px;
+}
+
+.weather-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.weather-main img {
+    width: 80px;
+    height: 80px;
+}
+
+.temp {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -1px;
+}
+
+.description {
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    margin: 10px 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #555;
+}
+
+.weather-details {
+    margin-top: 15px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    text-align: left;
+}
+
+.weather-details p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.error {
+    color: #e74c3c;
+    text-align: center;
+}
+
+#loading-animation {
+    display: none; 
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 1000; 
+}
